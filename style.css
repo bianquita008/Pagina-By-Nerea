@@ -1,3 +1,157 @@
+/* Tipografía base */
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #ffc0cb;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #6a1b4d;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom right, #ffe4e1, #ffc0cb);
+  color: #6a1b4d;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Secciones */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  color: #c2185b;
+  margin-bottom: 40px;
+}
+
+.lista-servicios {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+/* Proyectos */
+#proyectos p {
+  text-align: center;
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Formulario de contacto */
+form {
+  background-color: #ffeef3;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,192,203,0.2);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #f8bbd0;
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #ec407a;
+}
+
+button {
+  background-color: #ec407a;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #c2185b;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #ffc0cb;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
 body {
     font-family: sans-serif;
     margin: 0;
@@ -29,11 +183,60 @@ body {
     text-decoration: none;
     color: #333;
   }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 40px;
+  }
+  
+  .form-container {
+    max-width: 500px;
+    background: #fff;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
   
   .hero {
     text-align: center;
     padding: 2em;
-    background-color: #ffeef2;
+    background-color: #000000;
   }
   
   
@@ -49,6 +252,6 @@ body {
   footer {
     text-align: center;
     padding: 1em;
-    background-color: #ffeef2;
+    background-color: #ecd1d1;
   }
   
